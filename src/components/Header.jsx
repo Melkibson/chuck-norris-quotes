@@ -21,6 +21,7 @@ const Heading = styled.h1`
 const Story = styled.p`
   font-size: 1.2rem;
   font-family: "Akkurat-Bold";
+  padding-bottom: 2em;
 `
 const Container = styled.div`
   display: flex;

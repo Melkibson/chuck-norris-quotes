@@ -3,7 +3,6 @@ import chuck from './assets/images/chuck.png'
 import styled from 'styled-components'
 import {Wrapper} from './components/Wrapper'
 import { GlobalStyle } from './GlobalStyle'
-import { breakpoints } from './CommonStyle'
 import Button from './components/Button'
 import Quote from './components/Quote'
 import { useState } from 'react'
@@ -20,6 +19,10 @@ const Main = styled.main`
     #fad0c4 99%,
     #fad0c4 100%
   );
+
+  @media (min-width: 1200px) {
+    height: 100vh;
+  }
 `;
 
 function App() {
@@ -38,6 +41,8 @@ function App() {
       <GlobalStyle />
       <Main>
         <Wrapper>
+          <Button label="Get a new quote" onClick={handleQuote} />
+          <Quote quote={quote} />
           <Header
             label="Chuck Norris Quotes"
             image={chuck}
@@ -48,8 +53,6 @@ function App() {
         In his world, he chases the horizon, catches it, and laughs in the face of the unattainable. 
         He is the only one who won a staring contest against the sun, and he did it with his eyes closed."
           />
-          <Button label="Get a new quote" onClick={handleQuote}/>
-          <Quote quote={quote} />
         </Wrapper>
       </Main>
     </>

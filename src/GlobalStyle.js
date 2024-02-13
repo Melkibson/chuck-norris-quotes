@@ -2,8 +2,8 @@ import {createGlobalStyle} from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
     @font-face {
-        font-family: 'Magnum';
-        src: url('/fonts/magnum/magnum.ttf'), format('truetype');
+        font-family: 'Superfly';
+        src: url('/fonts/superfly/superfly.ttf'), format('truetype');
     }
 
     @font-face {
@@ -14,11 +14,6 @@ export const GlobalStyle = createGlobalStyle`
     @font-face {
         font-family: 'Akkurat-Bold';
         src: url('/fonts/akkurat/Akkurat-Bold.ttf'), format('truetype');
-    }
-
-    @font-face {
-        font-family: 'Akkurat-Light';
-        src: url('/fonts/akkurat/Akkurat-Light.ttf'), format('truetype');
     }
 
     body, html, #root {

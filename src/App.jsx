@@ -20,9 +20,6 @@ const Main = styled.main`
     #fad0c4 99%,
     #fad0c4 100%
   );
-  ${breakpoints.desktop} {
-    height: 100vh;
-  }
 `;
 
 function App() {
